@@ -1,0 +1,92 @@
+
+header {
+	.logo {
+		padding: 20px 20px 5px 20px;
+		max-width: 450px;
+
+		@include respond-to( 768px ) {
+			padding: 30px 0 10px 20px;
+		}
+	}
+
+	.bar {
+		background: $navy url(../img/bg-waves.png) center center no-repeat;
+		background-size: cover;
+		border-bottom: 10px solid $teal;
+		position: relative;
+
+		@include respond-to( 768px ) {
+			border-bottom: 20px solid $teal;
+		}
+
+		&:after {
+			top: 100%;
+			left: 50%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+			border-color: rgba( $teal, 0 );
+			border-top-color: $teal;
+			border-top-width: $arrow-size;
+			border-bottom-width: $arrow-size;
+			border-right-width: $arrow-size*3;
+			border-left-width: $arrow-size*3;
+			margin-left: (-$arrow-size)*3;
+			z-index: 100;
+
+			@include respond-to( 768px ) {
+				left: 0;
+				border-top-width: ($arrow-size*1.4);
+				border-bottom-width: ($arrow-size*1.4);
+				border-right-width: ($arrow-size*1.4)*3;
+				border-left-width: ($arrow-size*1.4)*3;
+				margin-left: 0;
+			}
+
+			@include respond-to( 900px ) {
+				left: 0;
+				border-top-width: ($arrow-size*1.8);
+				border-bottom-width: ($arrow-size*1.8);
+				border-right-width: ($arrow-size*1.8)*3;
+				border-left-width: ($arrow-size*1.8)*3;
+				margin-left: 0;
+			}
+		}
+
+		.wrap {
+			font-size: 25px;
+			line-height: 32px;
+			text-align: right;
+			padding: 20px 10px 10px 10px;
+			color: white;
+
+			@include respond-to( 768px ) {
+				padding: 40px 20px 20px 20px;
+			}
+		}
+
+		.page-template-page-quiz-start & .sidebar {
+			@include respond-to( 768px ) {
+				position: absolute;
+				top: 100%;
+				left: 0;
+				margin-left: 0;
+				content: " ";
+				width: ($arrow-size*1.4)*6;
+				height: 400px;
+				background: url(../img/sidebar-philosophy.png) top center no-repeat;
+				background-size: contain;
+				z-index: 101;
+			}
+
+			@include respond-to( 900px ) {
+				width: ($arrow-size*1.8)*6;
+				height: 500px;
+			}
+		}
+	}
+
+}

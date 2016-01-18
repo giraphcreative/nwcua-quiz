@@ -1,0 +1,49 @@
+
+
+// set colors
+$navy: #2C4668;
+$teal: #0491C1;
+$lime: #ADB947;
+$grey: #808285;
+$grey-dark: #414042;
+
+// link color
+$link-color: $teal;
+
+
+// set the header arrow size - we'll use it for calculations
+// in both the header and content styles.
+$arrow-size: 40px;
+
+
+
+// css reset
+@import "fonts";
+
+// mixin library
+@import "mixins";
+
+// css reset
+@import "reset";
+
+// base text and element styles
+@import "base";
+
+
+// header styles
+@import "header";
+
+
+// general styles
+@import "content";
+@import "quiz";
+@import "gravity";
+
+
+// footer styles
+@import "footer";
+
+
+// home-specific styles
+@import "home";
+

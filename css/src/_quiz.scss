@@ -1,0 +1,23 @@
+
+
+.quiz-results {
+	padding-top: 70px;
+	text-align: center;
+
+	h1 {
+		@include font;
+		font-weight: normal;
+		line-height: 1.3em;
+		color: $teal;
+		padding: 20px 0;
+	}
+
+	h2 {
+		@include font;
+		font-weight: normal;
+		color: darken( $grey, 20% );
+		line-height: 1.3em;
+		padding: 20px 0;
+	}
+}
+
