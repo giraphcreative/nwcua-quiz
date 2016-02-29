@@ -33,7 +33,7 @@
 	</div>
 	<div class="bar">
 		<div class="wrap"><?php the_title(); ?></div>
-		<div class="sidebar"></div>		
+		<div class="sidebar"></div>
 	</div>
 
 </header>
